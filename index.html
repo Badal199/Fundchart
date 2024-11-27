@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fund Maintain Chart - Hacker Design</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+      color: #00ff99;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      animation: backgroundAnimation 10s infinite;
+    }
+
+    @keyframes backgroundAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 30px #00ff99;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid #00ff99;
+      border-radius: 15px;
+      color: #00ff99;
+      width: 200px;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .card ul li {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #00ff99;
+      text-shadow: 0 0 10px #00ff99;
+    }
+
+    .telegram-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+      background: linear-gradient(45deg, #00ff99, #00ccff);
+      border: 2px solid #00ff99;
+      border-radius: 10px;
+      text-decoration: none;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
+    }
+
+    .telegram-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99;
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
+      }
+      50% {
+        box-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99;
+      }
+      100% {
+        box-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>FUND MAINTAIN AISE KARO NO LOSS</h1>
+  <div class="container">
+    <div class="card">
+      <h2>Recharge ₹500</h2>
+      <ul>
+        <li>₹1</li>
+        <li>₹3</li>
+        <li>₹7</li>
+        <li>₹14</li>
+        <li>₹29</li>
+        <li>₹60</li>
+        <li>₹123</li>
+        <li>₹255</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Recharge ₹1000</h2>
+      <ul>
+        <li>₹3</li>
+        <li>₹5</li>
+        <li>₹12</li>
+        <li>₹25</li>
+        <li>₹55</li>
+        <li>₹120</li>
+        <li>₹250</li>
+        <li>₹500</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Recharge ₹2000</h2>
+      <ul>
+        <li>₹5</li>
+        <li>₹12</li>
+        <li>₹24</li>
+        <li>₹50</li>
+        <li>₹110</li>
+        <li>₹230</li>
+        <li>₹490</li>
+        <li>₹1000</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Recharge ₹5000</h2>
+      <ul>
+        <li>₹20</li>
+        <li>₹30</li>
+        <li>₹65</li>
+        <li>₹136</li>
+        <li>₹280</li>
+        <li>₹575</li>
+        <li>₹1180</li>
+        <li>₹2415</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Recharge ₹10000</h2>
+      <ul>
+        <li>₹30</li>
+        <li>₹50</li>
+        <li>₹110</li>
+        <li>₹250</li>
+        <li>₹540</li>
+        <li>₹1120</li>
+        <li>₹2450</li>
+        <li>₹5020</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Recharge ₹20000</h2>
+      <ul>
+        <li>₹50</li>
+        <li>₹100</li>
+        <li>₹220</li>
+        <li>₹500</li>
+        <li>₹1100</li>
+        <li>₹2250</li>
+        <li>₹4700</li>
+        <li>₹9700</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">MUST JOIN WITH OUR SPECIAL REGISTRATION</div>
+  <a href="https://t.me/BNLASTKINGHACK" target="_blank" class="telegram-btn">JOIN CHANNEL</a>
+</body>
+</html>
